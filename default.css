@@ -6,7 +6,7 @@ html, body {
 body {
 	margin: 0px;
 	padding: 0px;
-	background: linear-gradient(#F4E4A7,#EFDC93);
+	background: linear-gradient(to right, #EFDC93,#FFFF);
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20pt;
 	font-weight: 500;
@@ -28,13 +28,13 @@ h1, h2, h3 {
 }
 
 h2 {
-	padding: 40px;
+/*	padding: 1/0px;*/
     background: linear-gradient(to left,  #051E3C , #EFDC93);
 /*    width: 100px;*/
-    padding: 100px;
-    padding-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 20px;
     margin-left: 20px;
-	font-size: 4em;
+	font-size: 2em;
 }
 
 p, ul {
@@ -462,9 +462,11 @@ ul.style3 .first {
 	{
 		overflow: hidden;
 		padding: 5em 0em;
+/*
 		background: rgba(0,0,0,.02);
 		background-image: url(images/overlay.png);
 		background-repeat: repeat;
+*/
 		border-top: 1px solid rgba(0,0,0,.05);
 	}
 	
@@ -570,14 +572,14 @@ ul.style3 .first {
 		display: inline-block;
 		margin-top: 2em;
 		padding: 0em 1em;
-		background: #2B73B7;
+		background: #051E3C;
 		letter-spacing: 0.10em;
 		line-height: 3em;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 1em;
-		color: #FFF;
+		color: #F3E2A5;
 	}
 	
 /*********************************************************************************/
