@@ -191,13 +191,11 @@ hr {
 
 /** MENU */
 
-/*
 #menu {
 	overflow: hidden;
-	background: #EFDC93;
+/*	background: #EFDC93;*/
     background: linear-gradient(to left,  #051E3C , #EFDC93);
 }
-*/
 
 #menu ul {
 	margin: 0px 0px 0px 0px;
@@ -246,7 +244,7 @@ hr {
 
 	#page img
 	{
-		margin-bottom: 2em;
+		margin-bottom: 1em;
 	}
 
 	#page .title
@@ -283,8 +281,8 @@ hr {
 
 #content {
 	float: left;
-	width: 700px;
-	padding-right: 20px;
+	width: 800px;
+	padding-right: 50px;
 	border-right: 1px solid #E6E7DC;
 }
 
@@ -572,14 +570,14 @@ ul.style3 .first {
 		display: inline-block;
 		margin-top: 2em;
 		padding: 0em 1em;
-		background: #0D2B4A;
+		background: #2B73B7;
 		letter-spacing: 0.10em;
 		line-height: 3em;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 1em;
-		color: #F1DFA0;
+		color: #FFF;
 	}
 	
 /*********************************************************************************/
