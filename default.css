@@ -6,7 +6,11 @@ html, body {
 body {
 	margin: 0px;
 	padding: 0px;
+<<<<<<< HEAD
 	background: linear-gradient(to right, #EFDC93,#FFFF);
+=======
+	background: #F4E4A7;
+>>>>>>> f5600e0c7002a1aaa86ef28a473753b6d660958c
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20pt;
 	font-weight: 500;
