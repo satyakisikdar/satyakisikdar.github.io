@@ -1,37 +1,52 @@
 html, body {
 	height: 100%;
+/*    background: #EFDC93;*/
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #F8F8F8 url(images/overlay.png) repeat;
+	background: linear-gradient(#F4E4A7,#EFDC93);
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 12pt;
-	font-weight: 400;
+	font-size: 20pt;
+	font-weight: 500;
 	color: rgba(0,0,0,.8);
+    word-wrap: break-word;
+    overflow: visible;
+    word-break: break-all;
+    flex-wrap: wrap;
+    hyphens: auto;
 }
 
 h1, h2, h3 {
-	margin: 0;
-	padding: 0;
+	margin: 20px;
+/*	padding: 20px;*/
 	text-transform: uppercase;
 	font-family: 'Varela Round', sans-serif;
-	font-weight: 300;
+	font-weight: 400;
 	color: #2D2D2D;
 }
 
 h2 {
-	padding: 0px 0px 30px 0px;
-	font-size: 2.50em;
+	padding: 40px;
+    background: linear-gradient(to left,  #051E3C , #EFDC93);
+/*    width: 100px;*/
+    padding: 100px;
+    padding-bottom: 30px;
+    margin-left: 20px;
+	font-size: 4em;
 }
 
-p, ol, ul {
+p, ul {
 	margin-top: 0px;
+    margin-left: 20px;
+/*    font-size: 1.5vw;*/
 }
 
 p {
 	line-height: 180%;
+/*    background: #EFDC93;*/
+    
 }
 
 strong {
@@ -39,6 +54,7 @@ strong {
 
 a {
 	color: rgba(0,0,0,.8);
+    text-decoration: none;
 }
 
 a:hover {
@@ -98,13 +114,15 @@ hr {
 /** WRAPPER */
 
 #wrapper {
-	background: #FFF;
+/*	background: #FFF;*/
 	margin: 0px 0px;
 }
 
 .container {
 	width: 1200px;
 	margin: 0px auto;
+/*    background: #EFDC93;*/
+
 }
 
 .clearfix {
@@ -115,7 +133,7 @@ hr {
 
 #header-wrapper
 {
-	background: url(images/bg.jpg) no-repeat left top;
+	background: url(images/nd_bg.jpg);
 	background-size: cover;
 }
 
@@ -128,7 +146,7 @@ hr {
 #social
 {
 	position: absolute;
-	top: 4em;
+	top: 5em;
 	right: 0;
 }
 
@@ -146,9 +164,9 @@ hr {
 }
 
 #logo h1 {
-	letter-spacing: -1px;
+	letter-spacing: 2px;
 	text-transform: lowercase;
-	font-size: 3.5em;
+	font-size: 4em;
 	color: #FFF;
 }
 
@@ -173,10 +191,13 @@ hr {
 
 /** MENU */
 
+/*
 #menu {
 	overflow: hidden;
-	background: #2B73B7;
+	background: #EFDC93;
+    background: linear-gradient(to left,  #051E3C , #EFDC93);
 }
+*/
 
 #menu ul {
 	margin: 0px 0px 0px 0px;
@@ -193,20 +214,20 @@ hr {
 #menu a {
 	display: block;
 	padding: 0px 40px 0px 40px;
-	line-height: 70px;
-	letter-spacing: 2px;
+	line-height: 65px;
+	letter-spacing: 3px;
 	text-decoration: none;
 	text-transform: uppercase;
 	text-align: center;
 	font-family: 'Varela Round', sans-serif;
-	font-size: 13px;
+	font-size: 20px;
 	color: rgba(255,255,255,0.5);
 	border: none;
 }
 
 #menu a:hover, #menu .current_page_item a {
 	text-decoration: none;
-	color: rgba(255,255,255,1);
+	color: #032C5A;
 }
 
 #menu .current_page_item a {
@@ -225,7 +246,7 @@ hr {
 
 	#page img
 	{
-		margin-bottom: 1em;
+		margin-bottom: 2em;
 	}
 
 	#page .title
@@ -243,7 +264,7 @@ hr {
 	#page .title .byline
 	{
 		display: block;
-		padding-bottom: 2em;
+		padding-bottom: 3em;
 		color: rgba(0,0,0,0.7);
 	}
 	
@@ -254,15 +275,16 @@ hr {
 
 #page .button
 {
-	margin-top: 1em;
+	margin-top: -2em;
+    margin-bottom: 1em;
 }
 
 /** CONTENT */
 
 #content {
 	float: left;
-	width: 800px;
-	padding-right: 50px;
+	width: 700px;
+	padding-right: 20px;
 	border-right: 1px solid #E6E7DC;
 }
 
@@ -328,6 +350,12 @@ hr {
 }
 
 /* List style 1 */
+
+ol li {
+/*    background: #ffe5e5;*/
+    padding: 10px;
+    margin-left: 35px;
+}
 
 ul.style1 {
 	margin: 0px;
@@ -544,14 +572,14 @@ ul.style3 .first {
 		display: inline-block;
 		margin-top: 2em;
 		padding: 0em 1em;
-		background: #2B73B7;
+		background: #0D2B4A;
 		letter-spacing: 0.10em;
 		line-height: 3em;
 		text-decoration: none;
 		text-transform: uppercase;
 		font-weight: 400;
 		font-size: 1em;
-		color: #FFF;
+		color: #F1DFA0;
 	}
 	
 /*********************************************************************************/
@@ -587,8 +615,8 @@ ul.style3 .first {
 	{
 		display: inline-block;
 		background: none;
-		width: 40px;
-		height: 40px;
+		width: 50px;
+		height: 50px;
 		line-height: 40px;
 		text-align: center;
 		color: rgba(255,255,255,1);
