@@ -1,12 +1,15 @@
 html, body {
 	height: 100%;
+/*    width: auto;*/
 /*    background: #EFDC93;*/
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
-	background: linear-gradient(to right, #EFDC93,#FFFF);
+	background-color: #FEFCF7;
+/*    	background: #F8F8F8 url(images/overlay.png) repeat;*/
+
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 20pt;
 	font-weight: 500;
@@ -133,21 +136,24 @@ hr {
 
 #header-wrapper
 {
-	background: url(images/nd_bg.jpg) repeat;
+	background: url(images/nd_bg.jpg) no-repeat left top;
 	background-size: cover;
+/*
+    height: 300px;
     width: 100%;
+*/
 }
 
 #header {
 	position: relative;
 	overflow: hidden;
-/*	height: 300px;*/
+	height: 300px;
     width: 100%;
 }
 
 #social
 {
-	position: relative;
+	position: absolute;
 	top: 5em;
 	right: 0;
 }
@@ -155,9 +161,9 @@ hr {
 /** LOGO */
 
 #logo {
-	position: relative;
+	position: absolute;
 	top: 3em;
-	left: 0;
+	left: 2cm;
 }
 
 #logo h1, #logo p {
@@ -465,11 +471,9 @@ ul.style3 .first {
 	{
 		overflow: hidden;
 		padding: 5em 0em;
-/*
 		background: rgba(0,0,0,.02);
 		background-image: url(images/overlay.png);
 		background-repeat: repeat;
-*/
 		border-top: 1px solid rgba(0,0,0,.05);
 	}
 	
