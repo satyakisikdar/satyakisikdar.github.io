@@ -1,9 +1,31 @@
-@inproceedings{basuchowdhuri2016detecting,
+---
+---
+
+Buttons:
+- `abbr`: Adds an abbreviation to the left of the entry. You can add links to these by creating a venue.yaml-file in the _data folder and adding entries that match.
+- `abstract`: Adds an "Abs" button that expands a hidden text field when clicked to show the abstract text
+- `arxiv`: Adds a link to the Arxiv website (Note: only add the arxiv identifier here - the link is generated automatically)
+- `bibtex_show`: Adds a "Bib" button that expands a hidden text field with the full bibliography entry
+- `html`: Inserts an "HTML" button redirecting to the user-specified link
+- `pdf`: Adds a "PDF" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
+- `supp`: Adds a "Supp" button to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
+- `blog`: Adds a "Blog" button redirecting to the specified link
+- `code`: Adds a "Code" button redirecting to the specified link
+- `poster`: Adds a "Poster" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
+- `video`: Adds a "Video" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/video/ directory)
+- `slides`: Adds a "Slides" button redirecting to a specified file (if a full link is not specified, the file will be assumed to be placed in the /assets/pdf/ directory)
+- `website`: Adds a "Website" button redirecting to the specified link
+
+
+@article{basuchowdhuri2016detecting,
  author = {Basuchowdhuri, Partha and Sikdar, Satyaki and Shreshtha, Sonu and Majumder, Subhashis},
  title = {{Detecting} {Community} {Structures} in {Social} {Networks} by {Graph} {Sparsification}},
- booktitle = {ACM IKDD Conference on Data Science (CODS)},
+ journal = {ACM IKDD Conference on Data Science (CODS)},
  year = {2016},
- addendum = {AR:5\%}
+ addendum = {AR:5\%},
+ bibtex_show = {true},
+ url = {https://dl.acm.org/doi/10.1145/2888451.2888479},
+ abbr = {CODS 2016},
 }
 
 @article{basuchowdhuri2019fast,
@@ -13,22 +35,36 @@
  year = {2018},
  publisher = {Springer},
  addendum = {IF:2.7},
+ code = {https://github.com/sna-lincom/LINCOM},
+ bibtex_show = {true},
+ abbr = {KAIS},
 }
 
-@inproceedings{hibshman2019towards,
+@article{sikdar2021scalable,
+ author = {Sikdar, Satyaki},
+ title = {{Scalable} and {Interpretable} {Graph} {Modeling} with {Graph} {Grammars}},
+ abbr = {PhD thesis},
+ url = {https://curate.nd.edu/show/br86b280953},
+ year = {2021},
+}
+
+
+@article{hibshman2019towards,
  author = {Hibshman, Justus and Sikdar, Satyaki and Weninger, Tim},
  title = {{Towards} {Interpretable} {Graph} {Modeling} with {Vertex} {Replacement} {Grammars}},
- booktitle = {IEEE International Conference on Big Data (BigData)},
+ journal = {Big Data},
  year = {2019},
- addendum = {AR:19\%}
+ addendum = {AR:19\%},
+ bibtex_show = {true},
 }
 
-@inproceedings{hibshman2021joint,
+@article{hibshman2021joint,
  author = {Hibshman, Justus Isaiah and Cedre, Daniel Gonzalez and Sikdar, Satyaki and Weninger, Tim},
  title = {{Joint} {Subgraph}-to-{Subgraph} {Transitions}: {Generalizing} {Triadic} {Closure} for {Powerful} and {Interpretable} {Graph} {Modeling}},
- booktitle = {ACM International Conference on Web Search and Data Mining (WSDM)},
+ journal = {Web Search and Data Mining (WSDM)},
  year = {2021},
- addendum = {AR:18\%}
+ addendum = {AR:18\%},
+ bibtex_show = {true},
 }
 
 @incollection{kogge2019a,
@@ -51,36 +87,41 @@
  doi = {10.7274/r0-z6dc-9c71},
 }
 
-@inproceedings{pennycuff2018synchronous,
+@article{pennycuff2018synchronous,
  author = {Pennycuff, Corey and Sikdar, Satyaki and Vajiac, Catalina and Chiang, David and Weninger, Tim},
  title = {{Synchronous} {Hyperedge} {Replacement} {Graph} {Grammars}},
- booktitle = {International Conference on Graph Transformation (ICGT)},
+ journal = {International Conference on Graph Transformation (ICGT)},
  year = {2018},
+ bibtex_show = {true},
 }
 
-@inproceedings{sikdar2019modeling,
+@article{sikdar2019modeling,
  author = {Sikdar, Satyaki and Hibshman, Justus and Weninger, Tim},
  title = {{Modeling} {Graphs} with {Vertex} {Replacement} {Grammars}},
- booktitle = {IEEE International Conference on Data Mining (ICDM)},
+ journal = {IEEE ICDM},
  year = {2019},
- addendum = {AR:9\%}
+ addendum = {AR:9\%},
+ code = {https://github.com/satyakisikdar/CNRG},
+ bibtex_show = {true},
 }
 
 @article{sikdar2022infinity,
   title={The {Infinity} {Mirror} {Test} for {Graph} {Models}},
   author={Sikdar, Satyaki and Cedre, Daniel Gonzalez and Ford, Trenton W and Weninger, Tim},
-  journal={IEEE Transactions on Knowledge and Data Engineering (TKDE)},
+  journal={Transactions on Knowledge and Data Engineering (TKDE)},
   year={2022},
   publisher={IEEE}, 
   addendum={IF:8.9},
+  bibtex_show = {true},
 }
 
-@inproceedings{sikdar2022attributed,
+@article{sikdar2022attributed,
   title={{Attributed} {Graph} {Modeling} with {Vertex} {Replacement} {Grammars}},
   author={Sikdar, Satyaki and Shah, Neil and Weninger, Tim},
-  booktitle={ACM International Conference on Web Search and Data Mining (WSDM)},
+  journal={Web Search and Data Mining (WSDM)},
   year={2022},
-  addendum={AR:18\%}
+  addendum={AR:18\%},
+  bibtex_show = {true},
 }
 
 @article{erkol2023consistency,
@@ -89,7 +130,8 @@
   journal={Quantitative Science Studies (QSS)},
   year={2023},
   publisher={MIT Press},
-  impactfactor={},
+  bibtex_show = {true},
+  abbr = {QSS},
 }
 
 
@@ -100,6 +142,7 @@
   howpublished={International Conference on Computational Social Science (IC\textsuperscript{2}S\textsuperscript{2}), Plenary Talk},
   year={2023},
   addendum={AR:1.75\%},
+  bibtex_show = {true},
 }
 
 @misc{venturini2023collaborationICSSI,
@@ -108,6 +151,7 @@
   author+an = {1=jointfirst;2=jointfirst},
   howpublished={International Conference on Science of Science and Innvoation (ICSSI), Contributed Talk},
   year={2023},
+  bibtex_show = {true},
 }
 
 @misc{venturini2023collaborationNetsci,
@@ -116,6 +160,7 @@
   author+an = {1=jointfirst;2=jointfirst},
   howpublished={International Conference on Network Science (NetSci), Contributed Talk},
   year={2023},
+  bibtex_show = {true},
 }
 
 
@@ -126,6 +171,7 @@
   year={2023},
   addendum={AR:31\%},
   author+an = {1=jointfirst;2=jointfirst},
+  bibtex_show = {true},
 }
 
 @misc{venturini2023covidICSSI,
@@ -133,39 +179,42 @@
   author={Sikdar, Satyaki and Venturini, Sara and Charpignon, Marie Laure and Kumar, Sagar and Rinaldi, Francesco and Tudisco, Francesco and Fortunato, Santo and Majumder, Maimuna S.},
   howpublished={International Conference on Science of Science and Innvoation (ICSSI), Contributed Talk},
   year={2023},
-  author+an = {1=jointfirst;2=jointfirst},
+  bibtex_show = {true},
 }
 
 
 % put the preprints here 
 
-@unpublished{ghavasieh2023persistent,
+@article{ghavasieh2023persistent,
   title={Persistent {Energy} {Localization} {Determines} the {Mesoscale} {Functional} {Organization} of {Complex} {Networks}},
   author={Sikdar, Satyaki and Ghavasieh, Arsham and De Domenico, Manlio and Fortunato, Santo},
-  author+an = {1=jointfirst;2=jointfirst},
-  howpublished={Forthcoming},
-  year={2023},
+  journal={Forthcoming},
+  year={2024},
   keywords={preprint},
+  bibtex_show = {true},
+  n_first_authors={2},
 }
 
 
 @article{venturini2023collaboration,
   title={{Collaboration} and {Topic} {Switches} in {Science}},
   author={Sikdar, Satyaki and Venturini, Sara and Rinaldi, Francesco and Tudisco, Francesco and Fortunato, Santo},
-  author+an = {1=jointfirst;2=jointfirst},
   %howpublished={arXiv preprint arXiv:2304.06826}, 
   journal={Scientific Reports (to appear)},
   year={2023},
   keywords={preprint},
   addendum={IF:4.6},
   selected={true}, 
+  bibtex_show = {true},
+  n_first_authors={2},
 }
 
-@unpublished{venturini2023covidpre,
+@article{venturini2023covidpre,
   title={The {COVID}-19 {Research} {Outbreak}: {How} the {Pandemic} {Culminated} in a {Surge} of {New} {Researchers}},
   author={Sikdar, Satyaki and Venturini, Sara and Charpignon, Marie Laure and Kumar, Sagar and Rinaldi, Francesco and Tudisco, Francesco and Fortunato, Santo and Majumder, Maimuna S.},
-  author+an = {1=jointfirst;2=jointfirst},
   howpublished={Under review at Science},
   year={2023},
   keywords={preprint},
+  bibtex_show = {true},
+  n_first_authors={2},
 }
