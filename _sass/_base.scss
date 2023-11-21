@@ -677,6 +677,7 @@ footer.sticky-bottom {
         abbr {
           display: inline-block;
           background-color: var(--global-theme-color);
+          color: var(--global-bg-color)!important;
           padding-left: 1rem;
           padding-right: 1rem;
 
@@ -698,13 +699,13 @@ footer.sticky-bottom {
       .title {
         font-weight: bolder;
         font-size: 1.1rem;
+        color: var(--global-theme-color);
       }
 
       .author {
         a {
-          // border-bottom: 1px dashed var(--global-theme-color);
-          border-bottom: 1px dashed $light-cyan-color;
-          color: $light-cyan-color;
+          border-bottom: 1px dashed var(--global-theme-color-light);
+          color: var(--global-theme-color-light);
 
           &:hover {
             border-bottom-style: solid;
@@ -712,9 +713,10 @@ footer.sticky-bottom {
           }
         }
 
-        >em {
+        >em {  // for focal author
           border-bottom: 1px solid;
-          font-style: normal;
+          font-style: oblique;
+          // color:
         }
 
         >span.more-authors {
