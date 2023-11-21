@@ -12,11 +12,7 @@
 
 "Shreshtha":
   - firstname: ["Sonu"]
-    url: null
-
-"Majumder":
-  - firstname: ["Subhashis"]
-    url: https://scholar.google.com/citations?user=wQaRGIMAAAAJ&hl=en
+    url: null  
 
 "Chiang":
   - firstname: ["David"]
@@ -49,6 +45,8 @@
 "Majumder":
   - firstname: ["Maimuna", "Maimuna S."]
     url: https://maimunamajumder.com/
+  - firstname: ["Subhashis"]
+    url: https://scholar.google.com/citations?user=wQaRGIMAAAAJ&hl=en
 
 "Tudisco":
   - firstname: ["Francesco"]
