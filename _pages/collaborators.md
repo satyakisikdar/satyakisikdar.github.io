@@ -14,3 +14,4 @@ TODO list
 - add more space between icons on the top left
 - add teaching resouces
 - flesh out CV 
+- Change default fonts
