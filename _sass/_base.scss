@@ -410,10 +410,12 @@ footer.fixed-bottom {
   background-color: var(--global-bg-color);
   font-size: 0.75rem;
   border-top: 1px solid var(--global-divider-color);
+  
 
   .container {
     padding-top: 9px;
     padding-bottom: 8px;
+    color: var(--global-footer-text-color);  // for footer text
   }
 
   a {
@@ -625,7 +627,6 @@ footer.sticky-bottom {
 
 
 // Publications
-
 .publications {
   margin-top: 2rem;
 
@@ -646,7 +647,7 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: $grey-color;
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -702,6 +703,7 @@ footer.sticky-bottom {
       }
 
       .author {
+        margin-bottom: 5px;
         a {
           border-bottom: 1px dashed var(--global-theme-color-light);
           color: var(--global-theme-color-light);
@@ -727,6 +729,17 @@ footer.sticky-bottom {
             color: var(--global-text-color);
             border-bottom: 1px dashed var(--global-text-color);
           }
+        }
+      }
+
+      .periodical {  // for location and year
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: var(--global-text-color);
+
+        >em {  // for focal author
+          font-style: oblique;
+          color: var(--global-text-color);
         }
       }
 
