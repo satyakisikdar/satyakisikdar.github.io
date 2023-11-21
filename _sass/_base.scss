@@ -407,13 +407,11 @@ blockquote {
 
 // Footer
 footer.fixed-bottom {
-  // background-color: var(--global-footer-bg-color);
-  // background-color: $grey-900;
+  background-color: var(--global-bg-color);
   font-size: 0.75rem;
+  border-top: 1px solid var(--global-divider-color);
 
   .container {
-    // color: var(--global-footer-text-color);
-    color: #{$grey-color};
     padding-top: 9px;
     padding-bottom: 8px;
   }
@@ -700,6 +698,7 @@ footer.sticky-bottom {
         font-weight: bolder;
         font-size: 1.1rem;
         color: var(--global-theme-color);
+        margin-bottom: 5px;
       }
 
       .author {
