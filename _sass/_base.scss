@@ -407,11 +407,13 @@ blockquote {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
+  // background-color: var(--global-footer-bg-color);
+  // background-color: $grey-900;
   font-size: 0.75rem;
 
   .container {
-    color: var(--global-footer-text-color);
+    // color: var(--global-footer-text-color);
+    color: #{$grey-color};
     padding-top: 9px;
     padding-bottom: 8px;
   }
