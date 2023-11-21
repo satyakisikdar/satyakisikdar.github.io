@@ -17,6 +17,7 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+  font-family: 'Noto Sans';
 }
 
 hr {
@@ -715,8 +716,10 @@ footer.sticky-bottom {
         }
 
         >em {  // for focal author
-          border-bottom: 1px solid;
+          // border-bottom: 1px solid;
+          border-bottom: 1px groove var(--global-text-color);
           font-style: oblique;
+          font-weight: bolder;
           // color:
         }
 
