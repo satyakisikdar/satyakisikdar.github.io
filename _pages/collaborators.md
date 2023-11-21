@@ -8,10 +8,9 @@ nav_order: 4
 ---
 
 TODO list
-- Make titles of citations colored
 - add more space between icons on the top left
+- add asterisks for shared first authors
 - add teaching resouces
 - flesh out CV 
-- Change default fonts
 - Fix google analytics
 - Remove repeated entries for abstracts. Add them as awards
