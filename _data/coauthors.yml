@@ -1,34 +1,87 @@
-"Adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+"Weninger":
+  - firstname: ["Tim"]
+    url: https://timweninger.com
 
-"Podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"Fortunato":
+  - firstname: ["Santo"]
+    url: https://www.santofortunato.net
 
-"Rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"Basuchowdhuri":
+  - firstname: ["Partha"]
+    url: https://scholar.google.com/citations?user=O4NnPhwAAAAJ&hl=en
 
-"Bach": 
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"Shreshtha":
+  - firstname: ["Sonu"]
+    url: null
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"Majumder":
+  - firstname: ["Subhashis"]
+    url: https://scholar.google.com/citations?user=wQaRGIMAAAAJ&hl=en
 
-"Przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"Chiang":
+  - firstname: ["David"]
+    url: https://www3.nd.edu/~dchiang/
 
-"Schrödinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"Vajiac":
+  - firstname: ["Catalina"]
+    url: http://catvajiac.me/
 
-"Lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"Pennycuff":
+  - firstname: ["Corey"]
+    url: https://scholar.google.com/citations?user=dCFmJgkAAAAJ&hl=en
 
-"Planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"Hibshman":
+  - firstname: ["Justus", "Justus Isaiah"]
+    url: https://scholar.google.com/citations?user=lKE11IEAAAAJ&hl=en
+
+"Cedre":
+  - firstname: ["Daniel", "Daniel Gonzalez"]
+    url: https://daniel-gonzalez-cedre.github.io/
+
+"Ford":
+  - firstname: ["Trenton", "Trenton W"]
+    url: https://scholar.google.com/citations?user=vlof6kgAAAAJ&hl=en
+
+"Shah":
+  - firstname: ["Neil"]
+    url: https://nshah.net/
+
+"Majumder":
+  - firstname: ["Maimuna", "Maimuna S."]
+    url: https://maimunamajumder.com/
+
+"Tudisco":
+  - firstname: ["Francesco"]
+    url: https://ftudisco.gitlab.io/post/
+
+"Rinaldi":
+  - firstname: ["Francesco"]
+    url: https://sites.google.com/view/francescorinaldi/home-page
+
+"Kumar":
+  - firstname: ["Sagar"]
+    url: https://www.networkscienceinstitute.org/comm-lab-team/sagar-kumar
+
+"Charpignon":
+  - firstname: ["Marie", "Maire-Laure", "Marie Laure"]
+    url: https://scholar.google.com/citations?user=gzpWXPcAAAAJ&hl=en
+
+"Venturini":
+  - firstname: ["Sara"]
+    url: https://saraventurini.github.io/
+
+"Erkol":
+  - firstname: ["Şirag", "Sirag"]
+    url: https://siragerkol.github.io/
+
+"Radicchi":
+  - firstname: ["Filippo"]
+    url: https://cgi.luddy.indiana.edu/~filiradi/
+
+"Ghavasieh":
+  - firstname: ["Arsham"]
+    url: https://scholar.google.com/citations?user=urvTnQ0AAAAJ&hl=en
+
+"De Domenico":
+  - firstname: ["Manlio"]
+    url: https://manliodedomenico.com/
