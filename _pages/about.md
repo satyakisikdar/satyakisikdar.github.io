@@ -19,7 +19,7 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false  # includes social icons at the bottom of the page
 ---
 
-Hi there! 👋
+Hello there! 👋
 
 I am a Postdoctoral Fellow at Indiana University, Bloomington where I work with [Dr. Santo Fortunato](https://www.santofortunato.net) to explore citation and collaboration networks to better understand the scientific enterprise.
 
