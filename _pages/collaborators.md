@@ -15,3 +15,4 @@ TODO list
 - add teaching resouces
 - flesh out CV 
 - Change default fonts
+- Make the footer background black
