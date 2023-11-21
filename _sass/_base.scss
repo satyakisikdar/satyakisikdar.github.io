@@ -162,11 +162,12 @@ blockquote {
 // Profile
 
 .profile {
-  width: 50%;
+  width: 70%;
 
   .more-info {
     margin-bottom: 5px;
     margin-top: 5px;
+    margin-left: 25px;
     font-family: monospace;
 
     p {
@@ -694,11 +695,14 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+        font-size: 1.1rem;
       }
 
       .author {
         a {
-          border-bottom: 1px dashed var(--global-theme-color);
+          // border-bottom: 1px dashed var(--global-theme-color);
+          border-bottom: 1px dashed $light-cyan-color;
+          color: $light-cyan-color;
 
           &:hover {
             border-bottom-style: solid;
