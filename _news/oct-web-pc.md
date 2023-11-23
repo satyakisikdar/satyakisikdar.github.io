@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Invited to serve on the PC in the Web Mining and Content Analysis track of The Web Conference 2024.
+Invited to serve on the PC of the Web Mining and Content Analysis track of The Web Conference 2024.
