@@ -10,6 +10,7 @@
   --global-text-color-lighter: #{$grey-color-dark};
   --global-theme-color: #{$purple-color};
   --global-theme-color-light: #{$light-purple-color};
+  --global-theme-color-lightest: #{$pink-color};
   --global-hover-color: #{$purple-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color};
@@ -57,6 +58,7 @@ html[data-theme='dark'] {
   --global-text-color-lighter: #{$grey-color-lighter};
   --global-theme-color: #{$cyan-color};
   --global-theme-color-light: #{$light-cyan-color};
+  --global-theme-color-lightest: #{$ligher-cyan-color};
   --global-hover-color: #{$cyan-color};
   --global-hover-text-color: #{$white-color};
   --global-footer-bg-color: #{$grey-color-dark};
