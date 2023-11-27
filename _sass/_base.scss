@@ -651,7 +651,7 @@ footer.sticky-bottom {
     margin-top: 0;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 1.5rem;
 
       .preview {
         width: 100%;
@@ -676,11 +676,6 @@ footer.sticky-bottom {
               text-decoration: none;
             }
           }
-        }
-
-        .award {
-          color: var(--global-theme-color) !important;
-          border: 1px solid var(--global-theme-color);
         }
       }
 
@@ -735,10 +730,10 @@ footer.sticky-bottom {
       }
 
       .links {
-        width: 6.3rem;
+        // width: 6.3rem;
         padding-left: -2rem;
         a.btn {
-          margin-left: -0.0rem;
+          margin-left: 2px;
           margin-right: -0.1rem;
           margin-bottom: -0.2rem;
           color: var(--global-text-color);
@@ -748,12 +743,17 @@ footer.sticky-bottom {
           padding-right: 0.25rem;
           padding-top: 0.1rem;
           padding-bottom: 0.1rem;
-          font-size: 0.6rem;
+          font-size: 0.8rem;
           &:hover {
             color: var(--global-theme-color);
             border-color: var(--global-theme-color);
           }
         }
+      }
+
+      .award {
+        color: var(--global-theme-color-lightest) !important;
+        // border: 1px solid var(--global-theme-color);
       }
 
       // .links {
