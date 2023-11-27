@@ -3,6 +3,17 @@
  ******************************************************************************/
 
 // Typography
+@import url(//fonts.googleapis.com/css?family=Noto+Sans);
+
+@font-face {
+  font-family: 'Noto Sans', sans-serif;
+  src: url(https://fonts.gstatic.com/s/notosans/v34/o-0IIpQlx3QUlC5A4PNr6DRASf6M7VBj.woff2) format('woff2');
+}
+
+html {
+  font-family: 'Noto Sans', sans-serif!important;
+  font-weight: 500!important;
+}
 
 p,
 h1,
@@ -17,7 +28,8 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: 'Noto Sans';
+  font-family: 'Noto Sans', sans-serif!important;
+  font-weight: 500!important;
 }
 
 hr {
@@ -691,7 +703,7 @@ footer.sticky-bottom {
 
       .author {
         margin-bottom: 5px;
-        width: 110%;
+        width: 120%;
         a {
           border-bottom: 1px dashed var(--global-theme-color-light);
           color: var(--global-theme-color-light);
