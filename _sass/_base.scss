@@ -620,6 +620,9 @@ footer.sticky-bottom {
 .publications {
   margin-top: 2rem;
 
+  selected{
+    width: 120%;  
+  }
   h1 {
     color: var(--global-theme-color);
     font-size: 2rem;
@@ -688,6 +691,7 @@ footer.sticky-bottom {
 
       .author {
         margin-bottom: 5px;
+        width: 110%;
         a {
           border-bottom: 1px dashed var(--global-theme-color-light);
           color: var(--global-theme-color-light);
@@ -733,7 +737,7 @@ footer.sticky-bottom {
         // width: 6.3rem;
         padding-left: -2rem;
         a.btn {
-          margin-left: 2px;
+          margin-left: 4px;
           margin-right: -0.1rem;
           margin-bottom: -0.2rem;
           color: var(--global-text-color);
@@ -830,6 +834,7 @@ footer.sticky-bottom {
     }
   }
 }
+
 
 // Rouge Color Customization
 figure.highlight {
