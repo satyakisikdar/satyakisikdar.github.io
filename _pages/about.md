@@ -7,7 +7,7 @@ permalink: /
 profile:
   align: right
   image: satyaki.png
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>Luddy Center for AI</p>
     <p>1015 E 11th Street</p>
