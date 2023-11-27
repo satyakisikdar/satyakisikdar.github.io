@@ -23,6 +23,6 @@ Hello there! 👋
 
 I am a Postdoctoral Fellow at Indiana University, Bloomington where I work with [Dr. Santo Fortunato](https://www.santofortunato.net) to explore citation and collaboration networks to better understand the scientific enterprise.
 
-I received my Ph.D. in Computer Science in Sep 2021 from the [University of Notre Dame](https://nd.edu) where I was advised by [Dr. Tim Weninger](https://timweninger.com). I received my bachelor's degree in Computer Science from [Heritage Institute of Technology](https://heritageit.edu/) in Kolkata, India.
+I received my Ph.D. in Computer Science & Engineering in Jan 2022 from the [University of Notre Dame](https://nd.edu) where I was advised by [Dr. Tim Weninger](https://timweninger.com). I received my bachelor's degree in Computer Science & Engineering from [Heritage Institute of Technology](https://heritageit.edu/) in Kolkata, India.
 
-My core research interest is understanding the fundamental mechanisms and processes that govern complex, interconnected systems using tools at the confluence of *network science*, *machine learning*, and *computational social science*. 
+My core research interest is understanding the fundamental mechanisms that govern complex, interconnected systems using tools at the confluence of *network science*, *machine learning*, and *computational social science*. 
