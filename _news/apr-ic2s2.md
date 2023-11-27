@@ -5,7 +5,7 @@ inline: true
 related_posts: false
 ---
 
-One **plenary** talk and one *contributed* talk accepted at [IC2S2 2023](https://www.ic2s2.org/). See you in Copenhagen!
+One *plenary* talk and one *contributed* talk accepted at [IC2S2 2023](https://www.ic2s2.org/). See you in Copenhagen!
 
 <!-- ---
 layout: post
