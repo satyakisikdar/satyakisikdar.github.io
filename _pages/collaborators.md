@@ -12,4 +12,3 @@ TODO list
 - Host the website on satyaki.net and not github.io
 - add teaching resouces
 - Fix google analytics
-- Change bib.html to style awards 
