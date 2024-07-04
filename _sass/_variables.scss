@@ -25,6 +25,8 @@
 
 $red-color:           #e78284 !default;
 $red-color-dark:      #d20f39  !default;
+$light-red-color:     lighten($red-color, 25%);
+$lighter-red-color:   lighten($red-color, 60%);
 $orange-color:        #fe640b !default;
 $blue-color:          #8aadf4 !default;
 $blue-color-dark:     #1e66f5 !default;
