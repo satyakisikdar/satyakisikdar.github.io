@@ -4,38 +4,58 @@
  ******************************************************************************/
 
 // Colors
-$red-color:           #FF3636 !default;
-$red-color-dark:      #B71C1C !default;
-$orange-color:        #F29105 !default;
-$blue-color:          #0076df !default;
-$blue-color-dark:     #00369f !default;
-$cyan-color:          #2698BA !default;
-$light-cyan-color:    lighten($cyan-color, 25%);
-$ligher-cyan-color:   #A9DBB8!default;
-$green-color:         #00ab37 !default;
-$green-color-lime:    #B7D12A !default;
-$green-color-dark:    #009f06 !default;
-$green-color-light:   #ddffdd !default;
-$green-color-bright:  #11D68B !default;
-$purple-color:        #B509AC !default;
-$light-purple-color:  lighten($purple-color, 25%);
-$pink-color:          #f92080 !default;
-$pink-color-light:    #ffdddd !default;
-$yellow-color:        #efcc00 !default;
+//$red-color:           #FF3636 !default;
+//$red-color-dark:      #B71C1C !default;
+//$orange-color:        #F29105 !default;
+//$blue-color:          #0076df !default;
+//$blue-color-dark:     #00369f !default;
+//$cyan-color:          #2698BA !default;
+//$light-cyan-color:    lighten($cyan-color, 25%);
+//$ligher-cyan-color:   #A9DBB8!default;
+//$green-color:         #00ab37 !default;
+//$green-color-lime:    #B7D12A !default;
+//$green-color-dark:    #009f06 !default;
+//$green-color-light:   #ddffdd !default;
+//$green-color-bright:  #11D68B !default;
+//$purple-color:        #B509AC !default;
+//$light-purple-color:  lighten($purple-color, 25%);
+//$pink-color:          #f92080 !default;
+//$pink-color-light:    #ffdddd !default;
+//$yellow-color:        #efcc00 !default;
 
-$grey-color:          #828282 !default;
+$red-color:           #e78284 !default;
+$red-color-dark:      #d20f39  !default;
+$orange-color:        #fe640b !default;
+$blue-color:          #8aadf4 !default;
+$blue-color-dark:     #1e66f5 !default;
+$cyan-color:          #04a5e5 !default;
+$light-cyan-color:    lighten($cyan-color, 25%);
+$ligher-cyan-color:   #99d1db !default;
+$green-color:         #a6d189 !default;
+$green-color-lime:    #a6da95 !default;
+$green-color-dark:    #40a02b !default;
+$green-color-light:   #ddffdd !default;
+$green-color-bright:  lighten($green-color, 25%);
+$purple-color:        #8839ef !default;
+$light-purple-color:  lighten($purple-color, 25%);
+$pink-color:          #ea76cb !default;
+$pink-color-light:    #f5bde6 !default;
+$yellow-color:        #eed49f !default;
+
+$grey-color:          #494d64 !default;
 $grey-color-light:    lighten($grey-color, 40%);
 $grey-color-lighter:    lighten($grey-color, 60%);
-$grey-color-dark:     #1C1C1D;
+$grey-color-dark:     #363a4f;
 $grey-900:            #212529;
 
-$white-color: #ffffff !default;
-$black-color: #000000 !default;
+$white-color: #cad3f5 !default;
+$black-color: #181926 !default;
 
 // Theme colors
 
 $code-bg-color-light:     rgba($purple-color, 0.05);
-$code-bg-color-dark:      #2c3237 !default;
+//$code-bg-color-dark:      #2c3237 !default;
+$code-bg-color-dark:      #181926 !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";
