@@ -20,7 +20,9 @@ social: false  # includes social icons at the bottom of the page
 ---
 
 Hello there! 👋
-I am a Postdoctoral Fellow at [Indiana University, Bloomington](https://luddy.indiana.edu/) where I work with [Dr. Santo Fortunato](https://www.santofortunato.net) to explore citation and collaboration networks to better understand the scientific enterprise.
+
+I am a tenure-track Assistant Professor in the [Computer Science](https://www.luc.edu/cs/) department at [Loyola University Chicago](https://www.luc.edu).
+Previously, I was a Postdoctoral Fellow at [Indiana University, Bloomington](https://luddy.indiana.edu/) where I worked with [Dr. Santo Fortunato](https://www.santofortunato.net) to explore citation and collaboration networks to better understand the scientific enterprise.
 
 I received my Ph.D. in Computer Science & Engineering in Jan 2022 from the [University of Notre Dame](https://nd.edu) where I was advised by [Dr. Tim Weninger](https://timweninger.com). I received my bachelor's degree in Computer Science & Engineering from [Heritage Institute of Technology](https://heritageit.edu/) in Kolkata, India.
 
