@@ -8,10 +8,11 @@ profile:
   align: right
   image: satyaki.png
   image_circular: false # crops the image to make it circular
-  # more_info: > 
-  #   Luddy Center for AI 
-  #   1015 E 11th Street
-  #   Bloomington, IN 47401
+  more_info: > 
+     Department of Computer Science 
+     Doyle Center 211
+     1052 W Loyola Ave
+     Chicago, IL 60626
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
