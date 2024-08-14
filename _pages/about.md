@@ -9,10 +9,10 @@ profile:
   image: satyaki.png
   image_circular: false # crops the image to make it circular
   more_info: > 
-     <p> Department of Computer Science</p> 
-     <p>Doyle Center 211</p>
-     <p>1052 W Loyola Ave</p>
-     <p>Chicago, IL 60626</p>
+     Department of Computer Science<br> 
+     211 Doyle Center<br>
+     1052 W Loyola Ave<br>
+     Chicago, IL 60626
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
