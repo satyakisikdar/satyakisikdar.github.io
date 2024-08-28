@@ -6,7 +6,7 @@ permalink: /
 
 profile:
   align: right
-  image: satyaki.png
+  image: satyaki-2024-bw.png
   image_circular: false # crops the image to make it circular
   more_info: > 
      Department of Computer Science<br> 
