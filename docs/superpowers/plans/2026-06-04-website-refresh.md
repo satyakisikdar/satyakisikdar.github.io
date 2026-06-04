@@ -314,6 +314,10 @@ h1, h2, h3, h4, h5, h6,
 .post-description {
   max-width: 760px;
 }
+// NOTE: the homepage uses `layout: about` (`_layouts/about.html`), not `page`.
+// During execution, open `_layouts/about.html` and confirm the bio text is
+// inside a `.post` wrapper; if it uses a different container, add that selector
+// here too — the wide-line problem was most visible on the homepage bio.
 
 // --- Nav active state ---------------------------------------------------
 .navbar .nav-item.active .nav-link {
@@ -626,6 +630,8 @@ past:
 {%- endfor -%}
 ```
 
+> **Two known cosmetics (leave as-is unless they bother you):** (a) the navbar brand carries Bootstrap's `font-weight-lighter !important` (`header.html:8`), which overrides the `font-weight: 600` on `.navbar-brand.title` — the name renders as light-weight Newsreader. (b) Single-word names produce a doubled initial (e.g. "Madonna" → "MM"). Neither affects the placeholder data.
+
 - [ ] **Step 3: Create `_pages/lab.md`**
 
 ```markdown
@@ -673,9 +679,12 @@ Expected: a match (PI has an image, so this may be empty — instead verify a pl
 - [ ] **Step 6: Commit**
 
 ```bash
-git add _data/lab.yml _includes/lab_members.html _pages/lab.md
+git add _data/lab.yml _includes/lab_members.html _pages/lab.md \
+        assets/img/lab-logo-light.png assets/img/lab-logo-dark.png
 git commit -m "feat: add data-driven Lab page with member panels"
 ```
+
+> **Deploy gotcha (must do):** the two lab-logo PNGs are currently **untracked** in the repo. A local `jekyll build` copies them into `_site`, so local checks pass — but GitHub Pages builds from committed files only, and the lab header would 404 in production if they aren't committed. The `git add` above includes them; do not drop them.
 
 ---
 
