@@ -9,7 +9,7 @@
 ## 0. Goals & non-goals
 
 **Goals**
-1. Distinctive editorial look (serif headings + sans body), **dark mode as default**, Loyola-adjacent but soft/neutral palette with a single sage accent.
+1. Distinctive editorial look (serif headings + sans body), **dark mode as default**, soft/neutral palette on a cool charcoal base with a single **teal** accent drawn from the SIKDAR LAB logo.
 2. Remove stale al-folio template pages.
 3. New **Sikdar Lab** page driven by `_data/lab.yml` (PI / Collaborators / Current / Past).
 4. New **Teaching** page driven by `_data/courses.yml`, with course summaries + linked syllabus PDFs.
@@ -23,23 +23,28 @@
 
 ### Color tokens
 
+Accent is **teal**, derived from the SIKDAR LAB logo (the "LAB" nodes). Single-accent / restrained ("Option 3"): teal only in the UI; the logo itself supplies the violet, so **violet is reserved for the logo and not used as a UI color.** Base is a slightly cool charcoal to sit under the logo.
+
 | token | dark (default) | light (toggle) | use |
 |---|---|---|---|
-| bg | `#1f1e1d` | `#f7f6f3` | page background |
-| surface / card | `#2a2725` | `#ffffff` | cards, panels |
-| rule | `#393633` | `#e6e0d4` | borders, dividers |
-| ink (text) | `#e8e4dc` | `#241e20` | body text |
-| muted | `#9b958b` | `#6b635f` | secondary text |
-| **accent (sage)** | `#9fb08a` | `#5f7a4f` (darkened for contrast on paper) | links, heading highlight, buttons, active nav |
-| accent-soft | sage @ ~18% alpha | sage @ ~15% alpha | badge backgrounds, hovers |
-| avatar/neutral | copper `#b4af95` | copper `#b4af95` | initials-avatar background |
+| bg | `#1a201f` | `#f6f7f5` | page background |
+| surface / card | `#222a28` | `#ffffff` | cards, panels |
+| rule | `#33403d` | `#e2e5e1` | borders, dividers |
+| ink (text) | `#e7e6e1` | `#21302d` | body text |
+| muted | `#92978f` | `#5f6b66` | secondary text |
+| **accent (teal)** | `#27a89e` | `#1d7a72` (darkened for contrast on paper) | links, heading highlight, buttons, active nav |
+| accent-soft | teal @ ~16% alpha | teal @ ~14% alpha | badge backgrounds, hovers |
+| avatar/neutral | slate `#46514f` | slate `#cfd6d2` | initials-avatar background |
+| logo violet | `#7378cd` | `#7378cd` | **logo only** — reserved, not a UI accent |
+
+Logo colors for reference (do not invent): SIKDAR nodes ≈ violet `#7378cd`, LAB nodes ≈ teal `#23a39a`, edges ≈ cream `#efe9d8`, logo plate ≈ dark teal `#0d3b40`.
 
 Implementation: map these onto al-folio's existing CSS custom properties in `_sass/_themes.scss` (`--global-bg-color`, `--global-text-color`, `--global-theme-color`, `--global-hover-color`, `--global-card-bg-color`, `--global-divider-color`, etc.) for both `:root` (light) and `html[data-theme='dark']`. Update raw SCSS color vars in `_sass/_variables.scss` as needed (the file currently holds a half-applied solarized palette — replace the active `$*-color` assignments that feed the theme).
 
 ### Typography
 - **Headings + site name:** `Newsreader` (serif).
 - **Body / UI:** `Inter`.
-- Replace the Google Fonts `<link>` in `_includes/head.html` (currently `Noto Sans` + `Material Icons`) with `Newsreader` + `Inter` (keep `Material Icons` if still referenced by the theme — verify before removing).
+- In the Google Fonts `<link>` in `_includes/head.html` (currently `Noto+Sans:...|Material+Icons`), swap `Noto+Sans` → `Newsreader` + `Inter`. **Keep `|Material+Icons` — al-folio uses it for UI glyphs (theme toggle, etc.); removing it breaks icons site-wide.**
 - In `_sass/_base.scss`: set body `font-family` to Inter, headings/name to Newsreader; **remove the `font-weight: 500 !important` override** (line ~8/24) so weights are controllable.
 - Constrain prose line length: cap main text column at ~`760px` (e.g. on `.post`, page content containers) while leaving the `max_width: 1100px` page container (in `_config.yml`) intact for nav/cards/grids.
 
@@ -103,14 +108,15 @@ past:                                   # alumni — PLACEHOLDERS
 
 ### Page: `_pages/lab.md`
 - `layout: page`, `permalink: /lab/`, `title: lab`, `nav: true`, `nav_order` placing it after publications.
+- **Header shows the SIKDAR LAB logo** — `assets/img/lab-logo-light.png` and `lab-logo-dark.png` (both already in repo), swapped per theme using al-folio's existing `repo-img-light` / `repo-img-dark` class pattern (see `_sass/_themes.scss`). Center it above the intro.
 - Intro blurb (lab name + research focus) + a short "Join the lab" note for prospective students (with contact/CTA).
 - Body renders the include below.
 
 ### Include: `_includes/lab_members.html`
 - Iterate the four groups in order: **PI → Collaborators → Current Students → Alumni**, each as a titled panel.
-- Each member = a card: photo (or **initials avatar** on copper bg when `image` empty), name, role, optional `since`/`now`, bio, and link icons (website/scholar/github → reuse al-folio's social icon set / academicons).
+- Each member = a card: photo (or **initials avatar** on slate bg when `image` empty), name, role, optional `since`/`now`, bio, and link icons (website/scholar/github → reuse al-folio's social icon set / academicons).
 - Graceful degradation: missing fields render nothing (no broken markup); a half-filled `lab.yml` still looks complete.
-- Badges: PI = sage solid · Current = sage-soft · Alum = neutral grey.
+- Badges: PI = teal solid · Current = teal-soft · Alum = neutral grey.
 - Responsive grid (cards wrap; reuse al-folio/Bootstrap grid utilities already loaded).
 
 Self-contained: no dependency on `coauthors.yml`.
@@ -199,7 +205,8 @@ Seed summaries (draft):
 ---
 
 ## 6. Identity
-- **Favicon:** generate a minimal **sage "S" monogram** SVG (serif S, sage `#9fb08a` on charcoal `#1f1e1d`); save to `assets/img/` and point `icon:` in `_config.yml` at it. Replaces `new-logo.png` reference.
+- **Favicon:** derive from the SIKDAR LAB logo, not an invented monogram. Produce a **square** favicon echoing the logo's network style — a small teal+violet node cluster (or the network-style "S" glyph) on the dark-teal plate `#0d3b40`. Save to `assets/img/` and point `icon:` in `_config.yml` at it, replacing `new-logo.png`. (The existing wide wordmark PNGs are not square, so a purpose-made square crop/derivative is needed.)
+- **Lab logos:** `assets/img/lab-logo-light.png` + `lab-logo-dark.png` (supplied) are used on the Lab page header (see §3), theme-swapped.
 - **Profile photo:** keep `satyaki-2024-bw.png` (suits the palette). No change.
 - **Footer:** unchanged (al-folio attribution stays per theme license).
 
@@ -208,7 +215,7 @@ Seed summaries (draft):
 ## 7. Verification
 Mockups (visual companion) only approximate the look. The real check is a local render:
 1. `bundle exec jekyll serve` (or `docker compose up` if native deps fail).
-2. Confirm, in browser: dark default on first load; toggle to light works and persists; nav shows the 5 pages; serif headings + Inter body; sage accent; reading column width; selected-papers + news + jekyll-scholar publication cards styled correctly; MathJax still renders; Lab page panels render with placeholders + initials avatars; Teaching cards link to the renamed syllabus PDFs (no 404s); favicon shows; deleted pages 404.
+2. Confirm, in browser: dark default on first load; toggle to light works and persists; nav shows the 5 pages; serif headings + Inter body; teal accent; reading column width; selected-papers + news + jekyll-scholar publication cards styled correctly; MathJax still renders; Lab page panels render with placeholders + initials avatars; Teaching cards link to the renamed syllabus PDFs (no 404s); favicon shows; deleted pages 404.
 3. Spot-check both themes for contrast (accent on bg, links, badges).
 
 ## 8. Workstream order (for the plan)
