@@ -27,4 +27,6 @@ Previously, I was a Postdoctoral Fellow at [Indiana University, Bloomington](htt
 
 I received my Ph.D. in Computer Science & Engineering in Jan 2022 from the [University of Notre Dame](https://nd.edu) where I was advised by [Dr. Tim Weninger](https://timweninger.com). I received my bachelor's degree in Computer Science & Engineering from [Heritage Institute of Technology](https://heritageit.edu/) in Kolkata, India.
 
-My core research interest is understanding the fundamental mechanisms that govern complex, interconnected systems using tools at the confluence of *network science*, *machine learning*, and *computational social science*. 
+My core research interest is understanding the fundamental mechanisms that govern complex, interconnected systems using tools at the confluence of *network science*, *machine learning*, and *computational social science*.
+
+<a class="btn-accent" href="{{ '/lab/' | relative_url }}">Join the Sikdar Lab →</a>
