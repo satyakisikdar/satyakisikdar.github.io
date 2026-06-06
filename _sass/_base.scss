@@ -4,10 +4,6 @@
 
 // Typography
 
-html {
-  font-weight: 500!important;
-}
-
 p,
 h1,
 h2,
@@ -21,8 +17,6 @@ li,
 span,
 strong {
   color: var(--global-text-color);
-  font-family: 'Noto Sans';
-  font-weight: 500!important;
 }
 
 hr {
