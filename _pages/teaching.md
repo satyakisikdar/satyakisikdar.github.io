@@ -3,7 +3,7 @@ layout: page
 title: teaching
 permalink: /teaching/
 nav: true
-nav_order: 5
+nav_order: 3
 description: Courses I teach at Loyola University Chicago.
 ---
 

@@ -9,7 +9,11 @@
  ******************************************************************************/
 
 // --- Typography ---------------------------------------------------------
-body, p, em, li, span, strong, a, td, th, input, button, .nav-link {
+// Set the body face once and let inline elements inherit. Listing span /
+// strong / em / a here would override headings whenever one wraps part of a
+// heading (e.g. the bold first name inside the page <h1>), splitting the
+// typeface mid-title. Headings opt back into the serif below.
+body, input, button, select, textarea, .nav-link {
   font-family: 'Inter', sans-serif;
 }
 
@@ -57,6 +61,20 @@ h1, h2, h3, h4, h5, h6,
   border-bottom: 2px solid var(--global-theme-color);
 }
 
+// --- Publications: coauthor links --------------------------------------
+// al-folio colors `.author a` with --global-theme-color-light, which the
+// refresh palette redefines as a near-transparent accent wash (~.15 alpha) —
+// invisible as text. Retarget to a legible muted color (matches selector
+// specificity of the base rule; imported after it, so this wins).
+.publications ol.bibliography li .author a {
+  color: var(--global-text-color-light);
+  border-bottom-color: var(--global-text-color-light);
+  &:hover {
+    color: var(--global-theme-color);
+    border-bottom-color: var(--global-theme-color);
+  }
+}
+
 // --- Shared focus ring (keyboard users only) ----------------------------
 a:focus-visible,
 .btn-accent:focus-visible,
@@ -88,10 +106,19 @@ a:focus-visible,
 }
 
 // --- Lab page -----------------------------------------------------------
+// Centered hero under the page title. The active logo variant is
+// display:block (set by .repo-img-light/.repo-img-dark), so text-align alone
+// won't center it — auto side margins do.
 .lab-logo {
   text-align: center;
-  margin: 0 auto 2rem;
-  img { max-width: 360px; width: 70%; height: auto; }
+  margin: 0.5rem auto 2.5rem;
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 420px;
+    width: 80%;
+    height: auto;
+  }
 }
 .lab-group { margin-bottom: 2.5rem; }
 .lab-group-title {
