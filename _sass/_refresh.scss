@@ -1,0 +1,248 @@
+/*******************************************************************************
+ * Website refresh — typography, nav, reading width, and Lab/Teaching
+ * components. Layered on al-folio base styles. Colors come from the
+ * --global-* / --accent-* custom properties in _themes.scss.
+ *
+ * Built mobile-first: fluid type, responsive grids, GPU-cheap motion
+ * (transform/opacity/color only), keyboard focus rings, and a
+ * prefers-reduced-motion escape hatch.
+ ******************************************************************************/
+
+// --- Typography ---------------------------------------------------------
+body, p, em, li, span, strong, a, td, th, input, button, .nav-link {
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, h6,
+.post-title,
+.navbar-brand.title {
+  font-family: 'Newsreader', serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+// Fluid page title — scales smoothly from phone to desktop without a media
+// query. Scoped to .post so nav / CV tables keep their sizing.
+.post .post-title {
+  font-size: clamp(2rem, 1.5rem + 2.4vw, 2.9rem);
+  line-height: 1.12;
+}
+
+// --- Reading measure ----------------------------------------------------
+// Keep prose to a comfortable line length. The homepage (`layout: about`)
+// wraps its bio in `.clearfix` inside `<article>`, so that path is listed
+// explicitly alongside the generic page/post path. Card grids live in
+// `.lab-grid` / `.course-list`, so they are never caught by these rules.
+.post > article > p,
+.post > article > ul,
+.post > article > ol,
+.post > article > blockquote,
+.post > article > .clearfix > p,
+.post > article > .clearfix > ul,
+.post > article > .clearfix > ol,
+.post > article > .clearfix > blockquote,
+.post-description {
+  max-width: 760px;
+}
+
+// --- Nav active state ---------------------------------------------------
+.navbar .nav-item.active .nav-link {
+  color: var(--global-theme-color);
+  border-bottom: 2px solid var(--global-theme-color);
+}
+
+// --- Shared focus ring (keyboard users only) ----------------------------
+a:focus-visible,
+.btn-accent:focus-visible,
+.term-btn:focus-visible,
+.lab-links a:focus-visible {
+  outline: 2px solid var(--global-theme-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+// --- Accent button ------------------------------------------------------
+.btn-accent {
+  display: inline-block;
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.18s ease;
+  &:hover {
+    background: var(--global-hover-color);
+    color: var(--global-hover-text-color);
+    text-decoration: none;
+    transform: translateY(-1px);
+  }
+  &:active { transform: translateY(0); }
+}
+
+// --- Lab page -----------------------------------------------------------
+.lab-logo {
+  text-align: center;
+  margin: 0 auto 2rem;
+  img { max-width: 360px; width: 70%; height: auto; }
+}
+.lab-group { margin-bottom: 2.5rem; }
+.lab-group-title {
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--global-divider-color);
+  padding-bottom: 0.4rem;
+  margin-bottom: 1.3rem;
+}
+.lab-grid {
+  display: grid;
+  // min(100%, 220px) keeps a single card from overflowing on narrow phones.
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr));
+  gap: 1.1rem;
+}
+.lab-card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 1.2rem;
+  text-align: center;
+  transition: border-color 0.18s ease, transform 0.18s ease, box-shadow 0.18s ease;
+  &:hover {
+    border-color: var(--global-theme-color);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+  }
+}
+.lab-card--pi {
+  border-color: var(--global-theme-color);
+  &:hover { box-shadow: 0 6px 22px var(--global-theme-color-light); }
+}
+.lab-avatar {
+  width: 84px; height: 84px;
+  margin: 0 auto 0.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--avatar-bg);
+  display: flex; align-items: center; justify-content: center;
+  img { width: 100%; height: 100%; object-fit: cover; }
+}
+.lab-initials { font-weight: 600; font-size: 1.5rem; color: #fff; }
+.lab-name { font-weight: 600; font-size: 1rem; }
+.lab-role { color: var(--global-text-color-light); font-size: 0.85rem; margin-top: 0.1rem; }
+.lab-bio { font-size: 0.85rem; margin-top: 0.5rem; color: var(--global-text-color); }
+.lab-badge {
+  display: inline-block;
+  margin-top: 0.6rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 0.18rem 0.6rem;
+  border-radius: 20px;
+}
+.lab-badge--pi { background: var(--global-theme-color); color: var(--global-hover-text-color); }
+.lab-badge--current { background: var(--accent-soft); color: var(--global-theme-color); }
+.lab-badge--alum { background: var(--global-divider-color); color: var(--global-text-color-light); }
+.lab-links {
+  margin-top: 0.6rem;
+  a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem; height: 2rem;     // ≥32px tap target
+    color: var(--global-text-color-light);
+    font-size: 1rem;
+    transition: color 0.15s ease;
+    &:hover { color: var(--global-theme-color); }
+  }
+}
+
+// --- Teaching page ------------------------------------------------------
+.course-list { display: flex; flex-direction: column; gap: 1.3rem; }
+.course-card {
+  background: var(--global-card-bg-color);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 12px;
+  padding: 1.3rem 1.5rem;
+  transition: border-color 0.18s ease, box-shadow 0.18s ease;
+  &:hover {
+    border-color: var(--global-theme-color);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  }
+}
+.course-head { display: flex; align-items: baseline; gap: 0.8rem; flex-wrap: wrap; }
+.course-code {
+  font-weight: 700;
+  color: var(--global-theme-color);
+  font-size: 0.9rem;
+  letter-spacing: 0.02em;
+}
+.course-level {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--global-text-color-light);
+  border: 1px solid var(--global-divider-color);
+  border-radius: 20px;
+  padding: 0.1rem 0.6rem;
+}
+.course-title { font-size: 1.3rem; margin: 0.3rem 0 0.5rem; }
+.course-summary { font-size: 0.92rem; color: var(--global-text-color); max-width: 70ch; }
+.course-topics { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: 0.6rem 0; }
+.topic-chip {
+  font-size: 0.72rem;
+  background: var(--accent-soft);
+  color: var(--global-theme-color);
+  padding: 0.15rem 0.6rem;
+  border-radius: 6px;
+}
+.course-terms { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.8rem; }
+.term-btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.78rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 7px;
+  padding: 0.4rem 0.75rem;
+  color: var(--global-text-color);
+  text-decoration: none;
+  transition: border-color 0.15s ease, color 0.15s ease;
+  i { color: var(--global-theme-color); margin-left: 0.3rem; }
+  &:hover { border-color: var(--global-theme-color); color: var(--global-theme-color); text-decoration: none; }
+}
+.term-btn--nolink { opacity: 0.6; }
+.course-note { font-size: 0.8rem; color: var(--global-text-color-light); margin-top: 0.6rem; }
+
+// --- Small screens ------------------------------------------------------
+@media (max-width: 576px) {
+  .lab-logo img { width: 78%; }
+  .lab-card { padding: 1rem; }
+  .lab-group-title { font-size: 1.25rem; }
+  .course-card { padding: 1.1rem 1.15rem; }
+  .course-title { font-size: 1.15rem; }
+  .course-summary { font-size: 0.88rem; }
+  // Roomier tap targets for syllabus links on touch screens.
+  .term-btn { padding: 0.5rem 0.85rem; }
+  .lab-links a { width: 2.4rem; height: 2.4rem; }
+}
+
+// --- Respect reduced-motion preferences ---------------------------------
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .lab-card:hover,
+  .course-card:hover,
+  .btn-accent:hover { transform: none; }
+}
