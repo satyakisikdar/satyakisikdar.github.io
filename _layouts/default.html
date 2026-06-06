@@ -15,11 +15,13 @@
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC8BF5JQ"
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main id="main-content" class="container mt-5">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
@@ -47,7 +49,7 @@
       {% else %}
         {{ content }}
       {% endif %}
-    </div>
+    </main>
 
     <!-- Footer -->
     {%- include footer.html %}

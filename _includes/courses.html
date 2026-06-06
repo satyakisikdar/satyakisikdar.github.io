@@ -5,7 +5,7 @@
       <span class="course-code">{{ c.code }}</span>
       {%- if c.level and c.level != "" -%}<span class="course-level">{{ c.level }}</span>{%- endif -%}
     </div>
-    <h3 class="course-title">{{ c.title }}</h3>
+    <h2 class="course-title">{{ c.title }}</h2>
     {%- if c.summary and c.summary != "" -%}<p class="course-summary">{{ c.summary }}</p>{%- endif -%}
     {%- if c.topics and c.topics.size > 0 -%}
     <div class="course-topics">

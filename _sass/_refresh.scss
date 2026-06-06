@@ -87,10 +87,39 @@ h1, h2, h3, h4, h5, h6,
 a:focus-visible,
 .btn-accent:focus-visible,
 .term-btn:focus-visible,
-.lab-links a:focus-visible {
+.lab-links a:focus-visible,
+.skip-link:focus {
   outline: 2px solid var(--global-theme-color);
   outline-offset: 2px;
   border-radius: 4px;
+}
+
+// --- Skip link (keyboard bypass of the navbar) --------------------------
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 2000;
+  padding: 0.6rem 1rem;
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0 0 6px 0;
+  &:focus { left: 0; }
+}
+
+// --- Distinguish in-text links without relying on color (WCAG 1.4.1) -----
+// Prose links get an underline; nav, buttons, cards, and bib action pills
+// are excluded by scoping to running text only.
+.post > article p a,
+.post > article ul li a,
+.post > article ol li a,
+.post > article td a,
+.post > article > .clearfix p a,
+footer a {
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 // --- Accent button ------------------------------------------------------
@@ -167,7 +196,7 @@ a:focus-visible,
   display: flex; align-items: center; justify-content: center;
   img { width: 100%; height: 100%; object-fit: cover; }
 }
-.lab-initials { font-weight: 600; font-size: 1.5rem; color: #fff; }
+.lab-initials { font-weight: 600; font-size: 1.5rem; color: var(--avatar-fg); }
 .lab-name { font-weight: 600; font-size: 1rem; }
 .lab-role { color: var(--global-text-color-light); font-size: 0.85rem; margin-top: 0.1rem; }
 .lab-bio { font-size: 0.85rem; margin-top: 0.5rem; color: var(--global-text-color); }
@@ -182,8 +211,8 @@ a:focus-visible,
   border-radius: 20px;
 }
 .lab-badge--pi { background: var(--global-theme-color); color: var(--global-hover-text-color); }
-.lab-badge--current { background: var(--accent-soft); color: var(--global-theme-color); }
-.lab-badge--alum { background: var(--global-divider-color); color: var(--global-text-color-light); }
+.lab-badge--current { background: var(--accent-soft); color: var(--global-hover-color); }
+.lab-badge--alum { background: var(--global-divider-color); color: var(--global-text-color); }
 .lab-links {
   margin-top: 0.6rem;
   a {
@@ -233,7 +262,7 @@ a:focus-visible,
 .topic-chip {
   font-size: 0.72rem;
   background: var(--accent-soft);
-  color: var(--global-theme-color);
+  color: var(--global-hover-color);
   padding: 0.15rem 0.6rem;
   border-radius: 6px;
 }
@@ -271,7 +300,10 @@ a:focus-visible,
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
-  *::after {
+  *::after,
+  html.transition *,
+  html.transition *::before,
+  html.transition *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
