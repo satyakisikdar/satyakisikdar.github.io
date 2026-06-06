@@ -67,8 +67,8 @@ og_image: https://satyaki.net/assets/img/satyaki-2024-bw.png # The site-wide (de
 
 github_username: satyakisikdar # your GitHub user name
 gitlab_username: # your GitLab user name
-bluesky_url: # full URL to your Bluesky profile, e.g. https://bsky.app/profile/satyaki.net
-threads_username: # your Threads handle without the @, e.g. satyakisikdar
+bluesky_url: https://bsky.app/profile/satyakisikdar.bsky.social # full URL to your Bluesky profile
+threads_username: satyakisikdar # your Threads handle without the @
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 linkedin_username: satyakisikdar # your LinkedIn user name
 telegram_username: # your Telegram user name

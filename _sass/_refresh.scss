@@ -94,6 +94,18 @@ a:focus-visible,
   border-radius: 4px;
 }
 
+// --- Inline-SVG social icons (Bluesky, Threads) -------------------------
+// Match the font-icon coloring (which targets `a i::before`): default to the
+// text color, accent on hover. fill="currentColor" follows `color`.
+.navbar-brand.social a svg,
+.social .contact-icons a svg {
+  color: var(--global-text-color);
+}
+.navbar-brand.social a:hover svg,
+.social .contact-icons a:hover svg {
+  color: var(--global-theme-color);
+}
+
 // --- Skip link (keyboard bypass of the navbar) --------------------------
 .skip-link {
   position: absolute;
