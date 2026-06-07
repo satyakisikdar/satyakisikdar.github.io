@@ -207,6 +207,7 @@ exclude:
   - vendor
   - blog
   - CLAUDE.md
+  - docs
 keep_files:
   - CNAME
   - .nojekyll

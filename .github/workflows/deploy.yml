@@ -41,6 +41,10 @@ jobs:
         export JEKYLL_ENV=production
         bundle exec jekyll build --lsi
         purgecss -c purgecss.config.js
+        # Mark the output as pre-built so GitHub Pages serves it as-is
+        # instead of re-running stock Jekyll (which lacks our custom
+        # plugins and chokes on Liquid in docs like README/CLAUDE).
+        touch _site/.nojekyll
     - name: Deploy 🚀
       if: github.event_name != 'pull_request'
       uses: JamesIves/github-pages-deploy-action@v4
