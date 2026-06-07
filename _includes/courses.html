@@ -1,0 +1,29 @@
+<div class="course-list">
+{%- for c in site.data.courses -%}
+  <div class="course-card">
+    <div class="course-head">
+      <span class="course-code">{{ c.code }}</span>
+      {%- if c.level and c.level != "" -%}<span class="course-level">{{ c.level }}</span>{%- endif -%}
+    </div>
+    <h2 class="course-title">{{ c.title }}</h2>
+    {%- if c.summary and c.summary != "" -%}<p class="course-summary">{{ c.summary }}</p>{%- endif -%}
+    {%- if c.topics and c.topics.size > 0 -%}
+    <div class="course-topics">
+      {%- for t in c.topics -%}<span class="topic-chip">{{ t }}</span>{%- endfor -%}
+    </div>
+    {%- endif -%}
+    {%- if c.offerings and c.offerings.size > 0 -%}
+    <div class="course-terms">
+      {%- for o in c.offerings -%}
+        {%- if o.syllabus and o.syllabus != "" -%}
+        <a class="term-btn" href="{{ o.syllabus | prepend: '/assets/pdf/syllabi/' | relative_url }}" target="_blank" rel="noopener" aria-label="{{ c.code }} syllabus — {{ o.term }} (PDF)">{{ o.term }}{% if o.modality and o.modality != "" %} · {{ o.modality }}{% endif %} <i class="fas fa-file-pdf" aria-hidden="true"></i></a>
+        {%- else -%}
+        <span class="term-btn term-btn--nolink">{{ o.term }}</span>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+    {%- endif -%}
+    {%- if c.note and c.note != "" -%}<p class="course-note">{{ c.note }}</p>{%- endif -%}
+  </div>
+{%- endfor -%}
+</div>

@@ -26,3 +26,14 @@
   <script src="{{ '/assets/js/no_defer.js' | relative_url | bust_file_cache }}"></script>
   <script defer src="{{ '/assets/js/common.js' | relative_url | bust_file_cache }}"></script>
   <script defer src="{{ '/assets/js/copy_code.js' | relative_url | bust_file_cache }}" type="text/javascript"></script>
+
+  <!-- Make horizontally-scrollable code blocks (e.g. BibTeX) keyboard-accessible (WCAG 2.1.1) -->
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll("pre").forEach(function (pre) {
+        if (pre.scrollWidth > pre.clientWidth && !pre.hasAttribute("tabindex")) {
+          pre.setAttribute("tabindex", "0");
+        }
+      });
+    });
+  </script>

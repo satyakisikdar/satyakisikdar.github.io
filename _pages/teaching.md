@@ -1,12 +1,13 @@
 ---
 layout: page
-permalink: /teaching/
 title: teaching
-description: Materials for courses you taught. Replace this text with your description.
-nav: false
-nav_order: 4
+permalink: /teaching/
+nav: true
+nav_order: 3
+description: Courses I teach at Loyola University Chicago.
 ---
 
-For now, this page is assumed to be a static description of your courses. You can convert it to a collection similar to `_projects/` so that you can have a dedicated page for each course.
+A selection of courses I have taught at Loyola University Chicago. Each card
+links to the syllabus for every term the course was offered.
 
-Organize your courses by years, topics, or universities, however you like!
+{% include courses.html %}

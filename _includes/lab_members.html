@@ -1,0 +1,48 @@
+{%- assign groups = "pi,collaborators,current,past" | split: "," -%}
+{%- assign titles = "Principal Investigator,Collaborators,Current Members,Alumni" | split: "," -%}
+
+{%- for group in groups -%}
+  {%- assign members = site.data.lab[group] -%}
+  {%- if members and members.size > 0 -%}
+
+  {%- case group -%}
+    {%- when 'pi' -%}{%- assign gtitle = titles[0] -%}{%- assign blabel = 'PI' -%}{%- assign bclass = 'lab-badge--pi' -%}
+    {%- when 'collaborators' -%}{%- assign gtitle = titles[1] -%}{%- assign blabel = 'Faculty' -%}{%- assign bclass = 'lab-badge--alum' -%}
+    {%- when 'current' -%}{%- assign gtitle = titles[2] -%}{%- assign blabel = 'Current' -%}{%- assign bclass = 'lab-badge--current' -%}
+    {%- when 'past' -%}{%- assign gtitle = titles[3] -%}{%- assign blabel = 'Alum' -%}{%- assign bclass = 'lab-badge--alum' -%}
+  {%- endcase -%}
+
+  <section class="lab-group">
+    <h2 class="lab-group-title">{{ gtitle }}</h2>
+    <div class="lab-grid">
+      {%- for m in members -%}
+      <div class="lab-card{% if group == 'pi' %} lab-card--pi{% endif %}">
+        <div class="lab-avatar">
+          {%- if m.image and m.image != "" -%}
+          <img src="{{ m.image | prepend: '/assets/img/' | relative_url }}" alt="{{ m.name }}" width="84" height="84" loading="lazy" decoding="async">
+          {%- else -%}
+          {%- assign parts = m.name | strip | split: " " -%}
+          {%- assign initials = parts.first | slice: 0, 1 | upcase -%}
+          {%- if parts.size > 1 -%}{%- assign last_initial = parts.last | slice: 0, 1 | upcase -%}{%- assign initials = initials | append: last_initial -%}{%- endif -%}
+          <span class="lab-initials">{{ initials }}</span>
+          {%- endif -%}
+        </div>
+        <div class="lab-name">{{ m.name }}</div>
+        {%- if m.role and m.role != "" -%}<div class="lab-role">{{ m.role }}</div>{%- endif -%}
+        {%- if m.since -%}<div class="lab-role">Since {{ m.since }}</div>{%- endif -%}
+        {%- if m.now and m.now != "" -%}<div class="lab-role">{{ m.now }}</div>{%- endif -%}
+        {%- if m.bio and m.bio != "" -%}<div class="lab-bio">{{ m.bio }}</div>{%- endif -%}
+        <span class="lab-badge {{ bclass }}">{{ blabel }}</span>
+        {%- if m.links -%}
+        <div class="lab-links">
+          {%- if m.links.website and m.links.website != "" -%}<a href="{{ m.links.website }}" target="_blank" rel="noopener" title="Website" aria-label="{{ m.name }} website"><i class="fas fa-globe"></i></a>{%- endif -%}
+          {%- if m.links.scholar and m.links.scholar != "" -%}<a href="{{ m.links.scholar }}" target="_blank" rel="noopener" title="Google Scholar" aria-label="{{ m.name }} Google Scholar"><i class="ai ai-google-scholar"></i></a>{%- endif -%}
+          {%- if m.links.github and m.links.github != "" -%}<a href="{{ m.links.github }}" target="_blank" rel="noopener" title="GitHub" aria-label="{{ m.name }} GitHub"><i class="fab fa-github"></i></a>{%- endif -%}
+        </div>
+        {%- endif -%}
+      </div>
+      {%- endfor -%}
+    </div>
+  </section>
+  {%- endif -%}
+{%- endfor -%}

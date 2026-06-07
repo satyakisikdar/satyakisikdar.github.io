@@ -24,3 +24,11 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
+# Standard-library gems unbundled in Ruby 3.4/4.0; pinned so older plugins
+# (jekyll-twitter-plugin, etc.) keep loading. Harmless on older Rubies.
+gem 'ostruct'
+gem 'csv'
+gem 'base64'
+gem 'bigdecimal'
+gem 'logger'
+gem 'fiddle'

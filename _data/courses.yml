@@ -1,0 +1,62 @@
+- code: "COMP 306/406"
+  title: "Data Mining"
+  level: "Undergraduate + Graduate"
+  summary: >
+    Theory and practice of analyzing very large datasets: structured and
+    unstructured data, ETL with Pandas, cleaning, visualization, frequent-
+    pattern mining, clustering, and supervised learning. The 406 (graduate)
+    section adds research components and formal writing.
+  topics: [Pandas ETL, data cleaning, visualization, frequent-pattern mining, clustering, supervised learning]
+  offerings:
+    - { term: "Spring 2026", modality: "In person", syllabus: "comp306-406-data-mining-spring2026.pdf" }
+    - { term: "Fall 2025",   modality: "In person", syllabus: "comp306-406-data-mining-fall2025.pdf" }
+    - { term: "Spring 2025", modality: "In person", syllabus: "comp306-406-data-mining-spring2025.pdf" }
+    - { term: "Fall 2024",   modality: "Online",    syllabus: "comp406-data-mining-fall2024.pdf" }
+  note: ""
+
+- code: "HONR 204"
+  title: "Science & Society: Network Science"
+  level: "Honors"
+  summary: >
+    Honors seminar: measuring network structure, identifying key nodes and
+    communities, and modeling contagion — blending theory with real-world
+    examples across computer science, sociology, political science, and biology.
+  topics: [network structure, centrality, community detection, contagion, resilience]
+  offerings:
+    - { term: "Spring 2026", modality: "In person", syllabus: "honr204-science-society-network-science-spring2026.pdf" }
+  note: ""
+
+- code: "COMP 271"
+  title: "Data Structures I"
+  level: "Undergraduate (+ grad COMP 400B)"
+  summary: >
+    Data abstraction and structures — stacks, queues, lists, sets, and trees —
+    with abstract data types, recursion, sorting and searching, and the analysis
+    of correctness and efficiency. Programming-intensive (Python).
+  topics: [stacks, queues, lists, sets, trees, ADTs, recursion, sorting & searching]
+  offerings:
+    - { term: "Fall 2025", modality: "In person", syllabus: "comp271-data-structures-fall2025.pdf" }
+  note: ""
+
+- code: "COMP 388/488"
+  title: "Topics in CS: Network Science"
+  level: "Undergraduate + Graduate"
+  summary: >
+    Network science as a unifying framework for interconnected systems: network
+    types and representations, centralities, community detection, generative
+    models, and epidemic spread (488 only). Includes a semester-long project.
+  topics: [representations, centrality, community detection, generative models, epidemics]
+  offerings:
+    - { term: "Spring 2025", modality: "Online", syllabus: "comp388-488-network-science-spring2025.pdf" }
+  note: ""
+
+- code: "COMP 141"
+  title: "Introduction to Computing Tools & Techniques"
+  level: "Undergraduate"
+  summary: >
+    The Unix shell environment, the command line, and shell scripting for
+    computer-aided problem solving. Fully online; no prerequisites.
+  topics: [Unix shell, command line, shell scripting]
+  offerings:
+    - { term: "Fall 2024", modality: "Online", syllabus: "comp141-intro-computing-tools-fall2024.pdf" }
+  note: ""
