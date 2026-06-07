@@ -206,6 +206,7 @@ exclude:
   - Gemfile.lock
   - vendor
   - blog
+  - CLAUDE.md
 keep_files:
   - CNAME
   - .nojekyll
