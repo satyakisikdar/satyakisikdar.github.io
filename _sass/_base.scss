@@ -270,9 +270,12 @@ blockquote {
   }
 
   .navbar-brand.social {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;  // spacing between logos
     padding-bottom: 0;
     padding-top: 0;
-    padding-right: 20px;  // spacing between logos
+    padding-right: 20px;  // gap before the nav toggler / menu
     font-size: 1.4rem; // size of logos
 
     a {
