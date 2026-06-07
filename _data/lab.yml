@@ -2,38 +2,131 @@ pi:
   - name: Satyaki Sikdar
     role: Principal Investigator
     image: satyaki-2024-bw.png
-    bio: >
-      Assistant Professor of Computer Science at Loyola University Chicago,
-      working at the confluence of network science, machine learning, and
-      computational social science.
+#     bio: > 
+#       Assistant Professor of Computer Science at Loyola University Chicago,
+#       working at the confluence of network science, machine learning, and
+#       computational social science.
     links:
       website: https://satyaki.net
       scholar: https://scholar.google.com/citations?user=2f6t6hYAAAAJ
       github: https://github.com/satyakisikdar
 
 collaborators:
-  - name: Collaborator Name
-    role: "Professor, Department · University"
-    image:
-    bio: >
-      Placeholder — short description of the collaboration. Replace.
+  - name: Yasin Silva
+    role: Professor, Computer Science, Loyola University Chicago
+    image: headshots/yas.jpg
     links:
-      website: ""
+      website: https://ysilva.cs.luc.edu
 
-current:
-  - name: Student Name
-    role: PhD Student
-    since: 2025
-    image:
-    bio: >
-      Placeholder — research interests. Replace.
+  - name: Santo Fortunato
+    role: Professor, Informatics, Indiana University
+    image: headshots/santo.jpg
     links:
-      github: ""
+      website: https://www.santofortunato.net/home
+
+  - name: Tim Weninger
+    role: Associate Professor, Computer Science, University of Notre Dame
+    image: headshots/tim.jpg
+    links:
+      website: https://timweninger.com
+      
+  - name: Maimuna Majumder
+    role: Assistant Professor, Computational Health Informatics Program, Harvard University
+    image: headshots/maia.jpg
+    links:
+      website: https://maimunamajumder.com
+      
+  - name: Filippo Radicchi 
+    role: Professor, Informatics, Indiana University
+    image: headshots/filippo.jpg
+    links:
+      website: https://homes.luddy.indiana.edu/filiradi/index.html
+      
+      
+current:
+  - name: Izzy Moore
+    role: PhD Student
+    since: Spring 2025
+    image: headshots/izzy.jpg
+    bio: >
+      Graph mining
+#     links:
+#       github: ""
+
+  - name: Meredith Sauer
+    role: MS Student
+    since: Spring 2026
+    image: headshots/meredith.jpeg
+    bio: >
+      Science of science
+#     links:
+#       github: ""
+
+
+  - name: Dawson Gallay
+    role: MS Student
+    since: Spring 2026
+    image: headshots/dawson.jpeg
+    bio: >
+      Science of Science
+#     links:
+#       github: ""
+
+  - name: Juan Rosendo
+    role: MS Student
+    since: Fall 2025
+    image: headshots/juan.jpg
+    bio: >
+      Cyberbullying network models
+#     links:
+#       github: ""
+
+  - name: Arianna Gonzalez-Barciona
+    role: BS Student
+    since: Summer 2026
+    image: headshots/arianna.jpg
+    bio: >
+      Cyberbullying on social media
+#     links:
+#       github: ""
+
+  - name: Ivan Madriz Pizarro
+    role: BS Student
+    since: Summer 2026
+    image: headshots/ivan.jpg
+    bio: >
+      Science of Science
+#     links:
+#       github: ""
+
+
 
 past:
-  - name: Alum Name
-    role: "MS '25"
-    now: "Now at Company / School"
-    image:
-    links:
-      website: ""
+#   - name: Alum Name
+#     role: "MS '25"
+#     now: "Now at Company / School"
+#     image:
+#     links:
+#       website: ""
+
+  - name: Taylor Hales
+    role: MS Student, 2025
+    image: headshots/taylor.jpg
+#     now: Ph.D. student at Case Western
+      
+  - name: Tyler Rosario
+    role: MS Student, 2025
+    image: headshots/tyler.jpg
+
+  - name: Ayra Aftab
+    role: MS Student, 2026
+    image: headshots/ayra.jpg
+    
+  - name: Chloe Kilroy
+    role: BS Student, 2026
+    image: headshots/chloe.jpg
+    
+  - name: Mariano Garcia Melo
+    role: BS Student, 2026
+    image: headshots/mariano.jpg
+    
