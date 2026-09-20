@@ -53,6 +53,15 @@ current:
 #     links:
 #       github: ""
 
+  - name: Sam Kramer
+    role: PhD Student
+    since: Fall 2026
+    image: headshots/sam.jpg
+    bio: >
+      Cyberbullying interaction networks
+#     links:
+#       github: ""
+
   - name: Meredith Sauer
     role: MS Student
     since: Spring 2026
@@ -90,14 +99,6 @@ current:
 #     links:
 #       github: ""
 
-  - name: Ivan Madriz Pizarro
-    role: BS Student
-    since: Summer 2026
-    image: headshots/ivan.jpg
-    bio: >
-      Science of Science
-#     links:
-#       github: ""
 
 
 
@@ -129,4 +130,8 @@ past:
   - name: Mariano Garcia Melo
     role: BS Student, 2026
     image: headshots/mariano.jpg
+
+  - name: Ivan Madriz Pizarro
+    role: BS Student, 2026
+    image: headshots/ivan.jpg
     
