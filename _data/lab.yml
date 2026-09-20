@@ -62,16 +62,6 @@ current:
 #     links:
 #       github: ""
 
-  - name: Meredith Sauer
-    role: MS Student
-    since: Spring 2026
-    image: headshots/meredith.jpeg
-    bio: >
-      Science of science
-#     links:
-#       github: ""
-
-
   - name: Dawson Gallay
     role: MS Student
     since: Spring 2026
@@ -134,4 +124,8 @@ past:
   - name: Ivan Madriz Pizarro
     role: BS Student, 2026
     image: headshots/ivan.jpg
+
+  - name: Meredith Sauer
+    role: MS Student, 2026
+    image: headshots/meredith.jpeg
     
