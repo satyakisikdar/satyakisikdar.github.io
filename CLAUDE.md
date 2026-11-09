@@ -43,8 +43,10 @@ fallback. Do not hand-edit the `gh-pages` branch — it is generated.
   `filtered_bibtex_keywords` (in `_config.yml`) hides these custom fields from the shown BibTeX.
 - `_news/*.md` — news/announcement items (a Jekyll collection). The homepage shows the most recent
   `announcements.limit` (currently 7).
-- `_data/*.yml` — structured data: `venues.yml`, `repositories.yml` (GitHub repo cards),
-  `coauthors.yml`.
+- `_data/*.yml` — structured data: `venues.yml`, `coauthors.yml`, `lab.yml` (lab page members;
+  `image:` is relative to `assets/img/`), `courses.yml` (teaching page; offerings newest-first).
+- Syllabi: PDFs live in `assets/pdf/syllabi/` named `<course>-<slug>-<term><year>.pdf`;
+  `_includes/courses.html` hardcodes that folder, so `courses.yml` `syllabus:` holds the bare filename.
 - `assets/` — `img/`, `pdf/` (CV lives here), `css/`, `js/`, `json/`, etc. Profile image and
   favicon (`icon:` in `_config.yml`) are under `assets/img/`.
 
