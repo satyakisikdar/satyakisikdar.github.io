@@ -78,3 +78,9 @@ These run at build time and add Liquid tags/filters beyond stock al-folio:
   Node via mini_racer). If a local build fails on these, prefer `docker compose up`.
 - `_config.yml` is excluded from live-reload; restart the server after editing it.
 - Drafts and content edits hot-reload; plugin (`.rb`) and `_config.yml` changes do not.
+- New CV: add `assets/pdf/CV-<Mon><YYYY>.pdf` and point `permalink:` in `_pages/cv.md` at it (the
+  nav "cv" link opens that path). Older CV PDFs stay in place.
+- Filenames are case-sensitive on GitHub Pages but not on macOS: `git ls-files` must show the exact
+  case the site links to, or the link 404s. Fix case with `git mv`.
+- `deploy.yml` pins Ruby by minor version (`'3.2'`); new runner images only ship the latest patch,
+  so an exact patch pin fails at "Setup Ruby".
