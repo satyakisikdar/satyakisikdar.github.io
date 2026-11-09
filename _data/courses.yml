@@ -11,7 +11,7 @@
     - { term: "Spring 2026", modality: "In person", syllabus: "comp306-406-data-mining-spring2026.pdf" }
     - { term: "Fall 2025",   modality: "In person", syllabus: "comp306-406-data-mining-fall2025.pdf" }
     - { term: "Spring 2025", modality: "In person", syllabus: "comp306-406-data-mining-spring2025.pdf" }
-    - { term: "Fall 2024",   modality: "Online",    syllabus: "comp406-data-mining-fall2024.pdf" }
+    - { term: "Fall 2024",   modality: "Online",    syllabus: "comp306-406-data-mining-fall2024.pdf" }
   note: ""
 
 - code: "HONR 204"
@@ -23,6 +23,7 @@
     examples across computer science, sociology, political science, and biology.
   topics: [network structure, centrality, community detection, contagion, resilience]
   offerings:
+    - { term: "Fall 2026",   modality: "In person", syllabus: "honr204-science-society-network-science-fall2026.pdf" }
     - { term: "Spring 2026", modality: "In person", syllabus: "honr204-science-society-network-science-spring2026.pdf" }
   note: ""
 
@@ -35,6 +36,7 @@
     of correctness and efficiency. Programming-intensive (Python).
   topics: [stacks, queues, lists, sets, trees, ADTs, recursion, sorting & searching]
   offerings:
+    - { term: "Fall 2026", modality: "In person", syllabus: "comp271-data-structures-fall2026.pdf" }
     - { term: "Fall 2025", modality: "In person", syllabus: "comp271-data-structures-fall2025.pdf" }
   note: ""
 
